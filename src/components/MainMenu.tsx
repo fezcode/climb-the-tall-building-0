@@ -111,6 +111,19 @@ export function MainMenu() {
                 <li><span className="text-red-500">Strength:</span> Adds flat damage to all attacks.</li>
               </ul>
 
+              <p><strong className="text-amber-400">UI & Enemy Intents:</strong></p>
+              <ul className="list-disc pl-5 space-y-1">
+                <li><strong className="text-white">Enemy Emojis (Bottom):</strong> The large emoji represents the enemy type (e.g. 🐛 for Jaw Worm).</li>
+                <li><strong className="text-white">Intent Icon (Top Right):</strong> Shows what the enemy will do next turn.</li>
+                <ul className="list-circle pl-5 mt-1 space-y-0.5 text-xs text-white/60">
+                  <li>⚔️ <span className="text-red-400">Attack:</span> Will deal damage (number shows amount).</li>
+                  <li>🛡️ <span className="text-blue-400">Defend:</span> Will gain block.</li>
+                  <li>💪 <span className="text-purple-400">Buff:</span> Will increase their own strength.</li>
+                  <li>☠️ <span className="text-green-400">Debuff:</span> Will apply negative status effects to you.</li>
+                  <li>💥 <span className="text-orange-400">Attack/Defend:</span> Will do both simultaneously.</li>
+                </ul>
+              </ul>
+
               <p><strong className="text-amber-400">Map Nodes:</strong></p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>⚔️ <strong className="text-white">Combat:</strong> Standard battles.</li>
